@@ -1,0 +1,25 @@
+{{#if error}}
+  <div>error: {{error}}</div>
+  <b>Please try again</b>
+{{/if}}
+<h2 id="post-title">{{post.title}} </h2>
+<p id="post-content">{{post.content}} </p>
+<h3>Comments</h3>
+<ul>
+  {{#each post.comments as |content|}}
+    <li>
+      {{content}}
+    </li>
+  {{/each}}
+</ul>
+
+<form id="comment-form" method="post" action={{window.location.href}}>
+  <textarea
+    id="commentContent"
+    placeholder="comment"
+    name="commentContent"
+    rows="20"
+    cols="50"
+  ></textarea><br />
+  <input type="submit" />
+</form>

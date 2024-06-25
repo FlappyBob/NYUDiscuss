@@ -1,0 +1,17 @@
+{{#if error}}
+  <div>error: {{error}}</div>
+  <b>Please try again</b>
+{{/if}}
+<form method="POST">
+  <label for="postContent">Add your post:</label><br />
+  <input type="text" placeholder="title" name="postTitle" />
+  <br />
+  <textarea
+    id="postContent"
+    placeholder="content"
+    name="postContent"
+    rows="20"
+    cols="50"
+  ></textarea><br />
+  <input type="submit" value="Submit" />
+</form>

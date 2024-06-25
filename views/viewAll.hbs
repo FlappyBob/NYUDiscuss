@@ -1,0 +1,16 @@
+{{#if message}}
+  <div class="error">{{message}}</div>
+{{/if}}
+<table id="postTable">
+  <tr>
+    <th>Title</th>
+    <th>Details</th>
+  </tr>
+  {{#each posts}}
+    <tr>
+      <td>{{title}}</td>
+      <td><a href="/view/{{slug}}">show Details</a></td>
+    </tr>
+  {{/each}}
+  <!-- Add more rows as needed -->
+</table>

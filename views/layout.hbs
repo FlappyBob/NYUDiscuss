@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NYU Discuss</title>
+  </head>
+  <body>
+    <h1>NYU Discuss Forum</h1>
+    {{#if user}}
+      Welcome,
+      <b>{{user.username}}</b>, welcome to NYU Discuss.
+      <br />
+
+      <a href="/view"><button>Enter the forum</button></a>
+      or share your feelings
+      <a href="/add/post"><button>Add your post</button></a>
+      <br />
+      Other options:
+      <br />
+      <a href="/resetPassword/{{user.passwordResetToken}}">
+        <button>Reset your password</button>
+      </a>
+      <br />
+      <a href="/view-mypost">
+        <button>View My posts & comments</button>
+      </a>
+      <br />
+      <a href="/view-recent">
+        <button>View Recent posts</button>
+      </a>
+    {{else}}
+      Welcome,
+      <a href="/register">Register</a>
+      or
+      <a href="/login">Login</a>
+    {{/if}}
+    {{{body}}}
+  </body>
+</html>

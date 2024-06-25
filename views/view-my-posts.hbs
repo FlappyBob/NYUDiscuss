@@ -1,0 +1,27 @@
+{{#if message}}
+  <div class="error">{{message}}</div>
+{{/if}}
+<h2>Preview posts: </h2>
+<table id="myPostTable">
+  <tr>
+    <th>Title</th>
+    <th>Details</th>
+  </tr>
+  {{#each posts}}
+    <tr>
+      <td>{{title}}</td>
+      <td><a href="/view/{{slug}}">show Details</a></td>
+    </tr>
+  {{/each}}
+
+  <!-- Add more rows as needed -->
+</table>
+
+<h2>Preview comments: </h2>
+<table>
+  {{#each comments as |c|}}
+    <tr>
+      <td>{{c.content}}</td>
+    </tr>
+  {{/each}}
+</table>

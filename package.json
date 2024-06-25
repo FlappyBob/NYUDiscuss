@@ -1,0 +1,38 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "description": "## Overview",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parse": "^0.4.0",
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.4.5",
+    "eslint-plugin-mocha": "^10.4.2",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "hbs": "^4.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongo-sanitize": "^1.1.0",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.3.1",
+    "mongoose-slug-generator": "^1.0.4",
+    "mongoose-slug-plugin": "^2.1.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0",
+    "passport-jwt": "^4.0.1",
+    "pm2": "^5.3.1",
+    "slugify": "^1.6.6",
+    "uslug": "^1.0.4",
+    "util": "^0.12.5",
+    "validator": "^13.11.0"
+  }
+}
